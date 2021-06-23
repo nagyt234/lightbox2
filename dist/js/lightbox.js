@@ -97,6 +97,10 @@
     if ($('#lightbox').length > 0) {
         return;
     }
+    // Do not do anything if no lightbox element
+    if ($('a[data-lightbox]').length == 0) {
+        return;
+    }
 
     var self = this;
 
